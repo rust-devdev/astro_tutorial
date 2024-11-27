@@ -1,0 +1,22 @@
+---
+const platform = "github";
+const username = "rust-devdev";
+import Social from './Social.astro';
+---
+
+<style>
+  footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+
+<footer>
+  <p>私のプロジェクトについて詳しくは<a href={`https://www.${platform}.com/${username}`} target="_blank">{platform}</a>をご確認ください！</p>
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+</footer>
