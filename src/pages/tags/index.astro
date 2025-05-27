@@ -1,5 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+const tags = ['astro', 'blogging', 'learning in public', 'successes', 'setbacks', 'community']
 const pageTitle = "タグインデックス";
 ---
-<BaseLayout pageTitle={pageTitle}></BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
+  <ul>
+    {tags.map((tag) => <li>{tag}</li>)}
+  </ul>
+</BaseLayout>
